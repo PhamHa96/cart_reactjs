@@ -18,11 +18,22 @@ const cart = (state = initialState, action) => {
             }
             localStorage.setItem('CART', JSON.stringify(state))
             return [...state];
-
+        case Types.DELETE_PRODUCT_IN_CART:
+            index = findProductInCart(state, product);
+            if (index !== -1) {
+                state.remove({
+                    product
+                })
+            } else {
+                localStorage.setItem('CART', JSON.stringify(state))
+                return [...state];
+            }
+            localStorage.setItem('CART', JSON.stringify(state))
+            return [...state];
         default: return [...state];
     }
 }
-// check neu trung thi cong don so luong 
+// check tim sp 
 var findProductInCart = (cart, product) => {
     var index = -1;
     if (cart.length > 0) {

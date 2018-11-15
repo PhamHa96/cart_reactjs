@@ -31,12 +31,15 @@ class CartItem extends Component {
             <td>{cart.product.price * cart.quantity}$</td>
             <td>
                 <button type="button" className="btn btn-sm btn-primary waves-effect waves-light" data-toggle="tooltip" data-placement="top"
-                    title="" data-original-title="Remove item">
+                    title="" data-original-title="Remove item" onClick={() =>this.delete()}>
                     X
                 </button>
             </td>
         </tr>
         );
+    }
+    delete =()=>{
+
     }
 }
 
