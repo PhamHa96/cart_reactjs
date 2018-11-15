@@ -38,9 +38,9 @@ class Header extends Component {
                             </ul>
                         </li>
                         <li>
-                            <form classNameName="search-form" role="search">
-                                <div classNameName="form-group waves-light waves-effect waves-light">
-                                    <input type="text" classNameName="form-control" placeholder="Search" />
+                            <form className="search-form" role="search">
+                                <div className="form-group waves-light waves-effect waves-light">
+                                    <input type="text" className="form-control" placeholder="Search" />
                                 </div>
                             </form>
                         </li>

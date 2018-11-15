@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Message from './components/Message';
-import Cart from './components/Cart';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ProductsContainer from './containers/ProductsContainer';
+import CartContainer from './containers/CartContainer';
+import MessageContainer from './containers/MessageContainer';
 
 class App extends Component {
     render() {
@@ -13,8 +13,8 @@ class App extends Component {
                 <main id="mainContainer">
                     <div className="container">
                         <ProductsContainer />
-                        <Message />
-                        <Cart />
+                        <MessageContainer />
+                        <CartContainer />
                     </div>
                 </main>
                 <Footer />
