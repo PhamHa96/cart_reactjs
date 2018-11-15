@@ -39,7 +39,8 @@ class CartItem extends Component {
         );
     }
     delete =()=>{
-
+        console.log("??");
+        
     }
 }
 
