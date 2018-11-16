@@ -31,16 +31,17 @@ class CartItem extends Component {
             <td>{cart.product.price * cart.quantity}$</td>
             <td>
                 <button type="button" className="btn btn-sm btn-primary waves-effect waves-light" data-toggle="tooltip" data-placement="top"
-                    title="" data-original-title="Remove item" onClick={() =>this.delete()}>
+                    title="" data-original-title="Remove item" onClick={() =>this.onDelete(cart.product)}>
                     X
                 </button>
             </td>
         </tr>
         );
     }
-    delete =()=>{
+    onDelete(c){
         console.log("??");
-        
+        var {onDeleteProductInCart} = this.props
+        onDeleteProductInCart(c)
     }
 }
 

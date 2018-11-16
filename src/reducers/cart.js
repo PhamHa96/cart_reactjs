@@ -21,9 +21,7 @@ const cart = (state = initialState, action) => {
         case Types.DELETE_PRODUCT_IN_CART:
             index = findProductInCart(state, product);
             if (index !== -1) {
-                state.remove({
-                    product
-                })
+                state.splice(index, 1) // cat o vi tri index 1 ptu
             } else {
                 localStorage.setItem('CART', JSON.stringify(state))
                 return [...state];
