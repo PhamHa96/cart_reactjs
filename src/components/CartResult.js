@@ -29,11 +29,10 @@ class CartResult extends Component {
         if (cart.length > 0) {
             for (var i = 0; i < cart.length; i++) {
                 {
-                    total += cart[i].product.price * cart[i].quantyti;
+                    total += cart[i].product.price * cart[i].quantity;
                 }
             }
         }
-        console.log('total in result', total)
         return total;
     }
 }
