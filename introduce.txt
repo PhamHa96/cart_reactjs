@@ -1,0 +1,3 @@
+this is a small module of cart in shop build 
+by reactjs learning from Nghiepuit. It's standar 
+struct of reactjs in 2018.
